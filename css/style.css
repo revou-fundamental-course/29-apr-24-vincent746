@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+form,
+input,
+button {
+    font-family: inherit;
+    font-size: initial;
+}
+
+header {
+    display: flex; 
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+header > .logo {
+    display: flex; 
+    flex: 1; 
+    align-items: center; 
+    justify-content: start;
+    margin-left: 15px;
+}
+
+header > .menu {
+    display: flex;
+}
+
+header > .menu > button{
+    padding: 6px 25px;
+    margin-right: -5px;
+}
+
+/* article */
+    article > .header-article > h1, .header-article > p {
+        text-align: center;
+    }
+
+    article > .header-article > h1 {
+        margin: 15px 0px 30px 0px;
+    }
+
+    article > .header-article > p {
+        margin-bottom: 20px;
+    }
+
+    article > .flex-container {
+        display: flex;
+        flex-direction: row;
+        margin-right: 100px;
+        margin-left: 100px;
+      }
+      
+    article > .flex-container > .flex-item-left {
+        padding: 10px;
+        flex: 50%;
+      }
+
+    article > .flex-container > .flex-item-left img {
+        width: 125%;
+    }
+      
+    article > .flex-container > .flex-item-right {
+        flex: 50%;
+        margin-top: 10px;
+    }
+
+    article > .flex-container > .flex-item-right .card {
+        background: grey;
+        height: 97%;
+        padding: 87px;
+        margin-left: 34%;
+        border-radius: 5px;
+    }
+
+    article > .flex-container > .flex-item-right > .card > .header-form > p {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    .form-group > input[type="text"] {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 12px;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+
+/* akhir article */
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+
+    header > .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header > .logo {
+        margin-bottom: 20px;
+    }
+
+    article .flex-container {
+        flex-direction: column;
+      }
+}
