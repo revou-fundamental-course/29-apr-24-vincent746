@@ -11,6 +11,10 @@ button {
     font-size: initial;
 }
 
+
+/* header */
+
+
 header {
     display: flex; 
     align-items: center;
@@ -35,61 +39,222 @@ header > .menu > button{
     margin-right: -5px;
 }
 
+
 /* article */
-    article > .header-article > h1, .header-article > p {
-        text-align: center;
-    }
 
-    article > .header-article > h1 {
-        margin: 15px 0px 30px 0px;
-    }
 
-    article > .header-article > p {
-        margin-bottom: 20px;
-    }
+/* slider */
+.mySlides {
+    display: none
+}
 
-    article > .flex-container {
-        display: flex;
-        flex-direction: row;
-        margin-right: 100px;
-        margin-left: 100px;
-      }
-      
-    article > .flex-container > .flex-item-left {
-        padding: 10px;
-        flex: 50%;
-      }
+img {
+    vertical-align: middle;
+}
 
-    article > .flex-container > .flex-item-left img {
-        width: 125%;
-    }
-      
-    article > .flex-container > .flex-item-right {
-        flex: 50%;
-        margin-top: 10px;
-    }
+.slideshow-container, .mySlides, img {
+    width: 100%;
+    
+}
 
-    article > .flex-container > .flex-item-right .card {
-        background: grey;
-        height: 97%;
-        padding: 87px;
-        margin-left: 34%;
-        border-radius: 5px;
-    }
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
 
-    article > .flex-container > .flex-item-right > .card > .header-form > p {
-        margin-top: 20px;
-        margin-bottom: 80px;
-    }
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-    .form-group > input[type="text"] {
-        width: 100%;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        padding: 12px;
-        border-radius: 5px;
-        margin-top: 5px;
-        margin-bottom: 20px;
-    }
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text > h1 {
+    font-size: 60px;
+    font-family: fantasy;
+    text-shadow: 3px 3px white;
+    font-weight: bold;
+}
+
+.text > p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+.text > .center > button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    border-radius: 23px;
+    background-color: #006792;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #006792;
+}
+
+.text > .center > button:hover {
+    box-shadow: 0 8px 28px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.text > .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, 
+.dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* slider */
+
+
+/* article form */
+
+article > .flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+    
+article > .flex-container > .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+}
+
+.form-group > input[type="text"], .form-group > input[type="email"] {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.form-group > select {
+    padding: 12px;
+    width: 110%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.form-group > button {
+    width: 110%;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+article > .flex-container > .flex-item-left img {
+    width: 125%;
+    height: 50%;
+    border-radius: 7px;
+}
+
+article > .flex-container > .flex-item-left > .garis > hr {
+    margin-left: 42%;
+    width: 26%;
+    border: 2px solid #f3f3f3;
+    margin-top: 45px;
+}
+
+article > .flex-container > .flex-item-left > .benefits-travel {
+    width: 109%;
+    margin-top: 45px;
+}
+
+article > .flex-container > .flex-item-left > p {
+    margin-top: 28px;
+    font-style: italic;
+    font-size: 30px;
+    margin-left: 50px;
+    color: #6e7378;
+}
+
+article > .flex-container > .flex-item-left > .nama-img {
+    display: flex; 
+    margin-top: 45px;
+    margin-left: 40px;
+}
+
+article > .flex-container > .flex-item-left > .nama-img > .nama > p {
+    font-style: italic;
+    color: #6e7378;
+}
+
+article > .flex-container > .flex-item-left > .nama-img > i {
+    background-color: #eaeff0;
+    padding: 20px;
+    border-radius: 50%;
+    margin: -5px 30px 0px 0px;
+}
+    
+article > .flex-container > .flex-item-right {
+    flex: 50%;
+    margin-top: 10px;
+}
+
+article > .flex-container > .flex-item-right .card {
+    background-color: #ebf1f1;
+    height: 60%;
+    padding: 87px;
+    margin-left: 34%;
+    border-radius: 5px;
+}
+
+article > .flex-container > .flex-item-right > .card > .header-form > p {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+
+
+
 
 
 /* akhir article */
@@ -110,5 +275,78 @@ header > .menu > button{
 
     article .flex-container {
         flex-direction: column;
-      }
+    }
+    
+    .text > h1 {
+        font-size: 20px;
+        font-family: fantasy;
+        text-shadow: 0px 0px white;
+        font-weight: bold;
+    }
+    
+    .text > p {
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-style: italic;
+        margin-top: 10px;
+    }
+    
+    .text > .center > button {
+        margin-top: 20px;
+        padding: 5px 15px;
+        border-radius: 23px;
+        background-color: #006792;
+        cursor: pointer;
+        color: white;
+        border: 1px solid #006792;
+    }
+
+    article > .flex-container {
+        margin-right: 100px;
+        margin-left: 31px;
+    }
+
+    article > .flex-container > .flex-item-left {
+        padding: 10px;
+    }
+
+    article > .flex-container > .flex-item-left > p {
+        margin-top: 20px;
+        font-style: italic;
+        font-size: 20px;
+        margin-left: 0px;
+        color: #6e7378;
+        text-align: center;
+        width: 125%;
+    }
+
+    article > .flex-container > .flex-item-left > .nama-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    article > .flex-container > .flex-item-left > .garis {
+        display: flex;
+        justify-content: center;
+    }
+
+    article > .flex-container > .flex-item-left > .garis > hr {
+        margin-left: 29%;
+    }
+
+    article > .flex-container > .flex-item-right .card {
+        background-color: #ebf1f1;
+        
+        padding: 87px;
+        margin-left: 0%;
+        border-radius: 5px;
+        width: 71%;
+    }
 }
+
+/* slider mobile */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+  

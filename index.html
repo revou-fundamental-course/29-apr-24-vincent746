@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Coding Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,13 +17,87 @@
         </div>
     </header>
     <article>
-        <div class="header-article">
-            <h1>Your Trusted Travel Agent's</h1>
-            <p>Your happiness is our hapiness</p>
+        <div class="slideshow-container">
+
+            <div class="text">
+                <h1>Your Trusted Travel Agent's</h1>
+                <p>Your happiness is our hapiness</p>
+                <div class="center">
+                    <button>Get Started</button>
+                </div>
+            </div>
+            
+
+            <div class="mySlides fade">
+                <img src="/assets/img/slider1.jpg">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="/assets/img/slider2.jpg">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="/assets/img/slider3.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        
         </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
         <div class="flex-container">
             <div class="flex-item-left">
-                <img src="https://bootstrapmade.com/demo/templates/QuickStart/assets/img/about-company-2.jpg" alt="">
+                <img src="assets/img/bg_1.jpg" alt="">
+                <p>"Liburan jadi menyenangkan bersama Travel Agentku"</p>
+                <div class="nama-img">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="nama">
+                        <h1>Florence Hughes</h1>
+                        <p>Ibu Rumah Tangga, 28</p>
+                    </div>
+                </div>
+                <div class="garis">
+                    <hr>
+                </div>
+                <div class="benefits-travel">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae nemo dolorum eum quasi, ullam molestiae? Omnis doloribus tempora debitis exercitationem hic ea corporis sapiente!</h3>
+                    <div style="display: flex; flex-direction: column;" class="step-benefits">
+                        <div style="display: flex;" class="left">
+                            <i style="background: salmon;
+                            padding: 16px 20px;
+                            border-radius: 50%;
+                            margin-top: 40px;" class="fa-solid fa-1"></i>
+                            <p>asdasdasdasd</p>
+                        </div>
+
+                        <div style="display: flex;" class="left">
+                            <i style="    background: salmon;
+                            padding: 16px 20px;
+                            border-radius: 50%;
+                            margin-top: 40px;" class="fa-solid fa-1"></i>
+                            <p>asdasdasdasd</p>
+                        </div>
+
+                        <div style="display: flex;" class="left">
+                            <i style="    background: salmon;
+                            padding: 16px 20px;
+                            border-radius: 50%;
+                            margin-top: 40px;" class="fa-solid fa-1"></i>
+                            <p>asdasdasdasd</p>
+                        </div>
+
+                        <!-- <i class="fa-solid fa-1"></i>
+                            <i class="fa-solid fa-1"></i> -->
+                    </div>
+                </div>
+                
             </div>
             <div class="flex-item-right">
                 <div class="card">
@@ -30,19 +105,26 @@
                         <h1>Contact-Us</h1>
                         <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
                     </div>
-                    <form action="" method="post">
+                    <form id="contact-form" action="" method="post">
                         <div class="form-group">
-                            <label for="">Your Name</label>
-                            <input type="text">
+                            <label for="name">Your Name : </label>
+                            <input type="text" id="name">
                         </div>
                         <div class="form-group">
-                            <label for="">Email Address</label>
-                            <input type="email">
+                            <label for="email">Email Address : </label>
+                            <input type="email" id="email">
                         </div>
-                       
-            
                         <div class="form-group">
-                            <button type="submit" class="submit">Send Message</button>
+                            <label for="travel">What are you interested in?</label>
+                            <select id="travel" name="travel">
+                                <option disabled selected value>Select Option</option>
+                                <option value="saab">Saab 95</option>
+                                <option value="mercedes">Mercedes SLK</option>
+                                <option value="audi">Audi TT</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="submit">SEND</button>
                         </div>
                     </form>
                 </div>
@@ -53,5 +135,6 @@
 
     </footer>
 </body>
+<script src="https://kit.fontawesome.com/8cb7c2e164.js" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 </html>
