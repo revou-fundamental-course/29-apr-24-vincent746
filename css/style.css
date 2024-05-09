@@ -105,6 +105,7 @@ article > .slideshow-container > .mySlides > img {
     font-family: fantasy;
     text-shadow: 3px 3px white;
     font-weight: bold;
+    width: 100%;
 }
 
 .text > p {
@@ -506,10 +507,11 @@ footer > .container > .copyright > a {
     }
     
     .text > h1 {
-        font-size: 10px;
+        font-size: 15px;
         font-family: fantasy;
         text-shadow: 0px 0px white;
         font-weight: bold;
+        width: 120%;
     }
     
     .text > p {
