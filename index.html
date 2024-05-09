@@ -9,15 +9,16 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="" alt="asdadas">
+        <img class="logo" src="assets/img/logo.png" alt="img">
         <div class="menu">
-            <button>Home</button>
-            <button>Our Package</button>
-            <button>Call Us</button>
+            <button><a href="#home">Home</a></button>
+            <button><a href="#our-package">Our Package</a></button>
+            <button><a href="#call">Call Us</a></button>
         </div>
     </header>
+
     <article>
-        <div class="slideshow-container">
+        <div id="home" class="slideshow-container">
 
             <div class="text">
                 <h1>Your Trusted Travel Agent's</h1>
@@ -54,7 +55,7 @@
         
         <div class="flex-container">
             <div class="flex-item-left">
-                <img src="assets/img/bg_1.jpg" alt="">
+                <img src="assets/img/destination-4.jpg" alt="">
                 <p>"Liburan jadi menyenangkan bersama Travel Agentku"</p>
                 <div class="nama-img">
                     <i class="fa-regular fa-user"></i>
@@ -68,29 +69,26 @@
                 </div>
                 <div class="benefits-travel">
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae nemo dolorum eum quasi, ullam molestiae? Omnis doloribus tempora debitis exercitationem hic ea corporis sapiente!</h3>
-                    <div style="display: flex; flex-direction: column;" class="step-benefits">
-                        <div style="display: flex;" class="left">
-                            <i style="background: salmon;
-                            padding: 16px 20px;
-                            border-radius: 50%;
-                            margin-top: 40px;" class="fa-solid fa-1"></i>
-                            <p>asdasdasdasd</p>
+                    <div class="step-benefits">
+                        <div class="left">
+                            <div class="icon">
+                                <i class="fa-solid fa-1"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At commodi mollitia perspiciatis eveniet! Culpa, quo.</p>
                         </div>
 
                         <div style="display: flex;" class="left">
-                            <i style="    background: salmon;
-                            padding: 16px 20px;
-                            border-radius: 50%;
-                            margin-top: 40px;" class="fa-solid fa-1"></i>
-                            <p>asdasdasdasd</p>
+                            <div class="icon">
+                                <i class="fa-solid fa-2"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, facilis? Incidunt quam dolorem delectus odio.</p>
                         </div>
 
                         <div style="display: flex;" class="left">
-                            <i style="    background: salmon;
-                            padding: 16px 20px;
-                            border-radius: 50%;
-                            margin-top: 40px;" class="fa-solid fa-1"></i>
-                            <p>asdasdasdasd</p>
+                            <div class="icon">
+                                <i class="fa-solid fa-3"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iure, maxime veritatis voluptas ipsum consectetur.</p>
                         </div>
 
                         <!-- <i class="fa-solid fa-1"></i>
@@ -131,8 +129,114 @@
             </div>
           </div>
     </article>
-    <footer>
 
+    <section>
+        <div id="our-package" class="header">
+            <h1>Our Package</h1>
+        </div>
+        <div class="flex-container">
+            <div class="top-package">
+                <div class="flex-item-left">
+                    <div class="icon">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+                    
+                    <div class="text-package">
+                        <h4>Bali</h4>
+                        <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+                </div>
+                <div class="flex-item-center">
+                    <div class="icon">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+                    
+                    <div class="text-package">
+                        <h4>Japan</h4>
+                        <p>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+                </div>
+                <div class="flex-item-right">
+                    <div class="icon">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+                    
+                    <div class="text-package">
+                        <h4>Singapore</h4>
+                        <p>Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+                </div>
+            </div>
+            <div class="garis">
+                <hr>
+            </div>
+            <div class="top-package">
+                <div class="flex-item-left">
+                    <div class="icon">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    
+                    <div class="text-package">
+                        <h4>Bandung</h4>
+                        <p>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+                </div>
+                <div class="flex-item-center">
+                    <div class="icon">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    
+                    <div class="text-package">
+                        <h4>Surabaya</h4>
+                        <p>Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+                </div>
+                <div class="flex-item-right">
+                    <div class="icon">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    
+                    <div class="text-package">
+                        <h4>Third Feature</h4>
+                        <p>bingung ingin pilih travel apa ? sudah tersedia paket travel untuk kamu dan memberikan pelayanan yang terbaik untuk anda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="garis">
+            <hr>
+        </div>
+        <div class="closing">
+            <h1>Prioritizing Travel Transportation Services</h1>
+            <p>Provide the Best Service and Make Sure Customers Are Satisfied</p>
+            <button>CALL TO ACTION</button>
+        </div>
+        <div class="garis">
+            <hr>
+        </div>
+    </section>
+
+    <footer id="call">
+        <div class="container">
+            <img src="assets/img/logo.png" alt="">
+            
+                <ul class="footer-link">
+                    <li>
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+
+                <div class="copyright">
+                    © 2024 <a href="https://www.instagram.com/vincent_putro_utomo/" target="_blank">Vincent Putro Utomo</a>
+                </div>
+            
+        </div>
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/8cb7c2e164.js" crossorigin="anonymous"></script>

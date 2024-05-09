@@ -12,6 +12,7 @@ button {
 }
 
 
+
 /* header */
 
 
@@ -20,14 +21,22 @@ header {
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid black;
+    background: #034f81;
+    justify-content: space-between;
+}
+
+header > .menu > button > a {
+    text-decoration: none;
+    padding: 20px;
 }
 
 header > .logo {
     display: flex; 
-    flex: 1; 
     align-items: center; 
     justify-content: start;
     margin-left: 15px;
+    width: 100px; 
+    padding: 20px 0px;
 }
 
 header > .menu {
@@ -37,6 +46,7 @@ header > .menu {
 header > .menu > button{
     padding: 6px 25px;
     margin-right: -5px;
+    text-decoration: none;
 }
 
 
@@ -52,9 +62,8 @@ img {
     vertical-align: middle;
 }
 
-.slideshow-container, .mySlides, img {
+article > .slideshow-container > .mySlides > img {
     width: 100%;
-    
 }
 
 .slideshow-container {
@@ -88,7 +97,7 @@ img {
 }
 
 .text > h1 {
-    font-size: 60px;
+    font-size: 40px;
     font-family: fantasy;
     text-shadow: 3px 3px white;
     font-weight: bold;
@@ -188,11 +197,23 @@ article > .flex-container > .flex-item-left {
     width: 110%;
     padding: 10px;
     margin-top: 30px;
+    border-radius: 5px;
+    background-color: #006792;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #006792;
 }
 
-article > .flex-container > .flex-item-left img {
+.form-group > button:hover {
+    box-shadow: 0 8px 28px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* article banner */
+
+article > .flex-container > .flex-item-left > img {
     width: 125%;
-    height: 50%;
+    height: 37%;
     border-radius: 7px;
 }
 
@@ -227,11 +248,42 @@ article > .flex-container > .flex-item-left > .nama-img > .nama > p {
     color: #6e7378;
 }
 
+article > .flex-container > .flex-item-left > .nama-img > .nama > h1 {
+    color: #4b4d53;
+}
+
 article > .flex-container > .flex-item-left > .nama-img > i {
-    background-color: #eaeff0;
+    background-color: #b4f3f3;
     padding: 20px;
     border-radius: 50%;
     margin: -5px 30px 0px 0px;
+}
+
+article > .flex-container > .flex-item-left > .benefits-travel > h3 {
+    color: #4b4d53;
+}
+
+article > .flex-container > .flex-item-left > .benefits-travel > .step-benefits {
+    display: flex; 
+    flex-direction: column;
+}
+
+article > .flex-container > .flex-item-left > .benefits-travel > .step-benefits > .left {
+    display: flex;
+}
+
+article > .flex-container > .flex-item-left > .benefits-travel > .step-benefits > .left > .icon > i {
+    background: #b4f3f3;
+    padding: 16px 20px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+article > .flex-container > .flex-item-left > .benefits-travel > .step-benefits > .left > p {
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 55%;
+    color: #6e7378;
 }
     
 article > .flex-container > .flex-item-right {
@@ -240,8 +292,8 @@ article > .flex-container > .flex-item-right {
 }
 
 article > .flex-container > .flex-item-right .card {
-    background-color: #ebf1f1;
-    height: 60%;
+    background-color: #b4f3f3;
+    height: 45%;
     padding: 87px;
     margin-left: 34%;
     border-radius: 5px;
@@ -252,14 +304,186 @@ article > .flex-container > .flex-item-right > .card > .header-form > p {
     margin-bottom: 80px;
 }
 
-
-
-
-
-
 /* akhir article */
 
-@media (max-width: 800px) {
+/* section */
+
+section > .header{
+    background-color: #b4f3f3;
+    text-align: center;
+    padding: 50px;
+    margin-top: 0%;
+}
+
+section > .header > h1 {
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+section > .flex-container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+section > .flex-container > .top-package {
+    display: flex;
+    margin-top: 50px;
+}
+
+section > .flex-container > .top-package > .flex-item-left,
+section > .flex-container > .top-package > .flex-item-center,
+section > .flex-container > .top-package > .flex-item-right
+{
+    flex-grow: 4;
+    display: flex;
+    padding: 10px;
+}
+
+section > .flex-container > .top-package > .flex-item-left > .icon > i,
+section > .flex-container > .top-package > .flex-item-center > .icon > i,
+section > .flex-container > .top-package > .flex-item-right > .icon > i
+{
+    background: #b4f3f3;
+    padding: 18px 20px;
+    border-radius: 50%;
+}
+
+section > .flex-container > .top-package > .flex-item-left > .text-package > h4,
+section > .flex-container > .top-package > .flex-item-center > .text-package > h4,
+section > .flex-container > .top-package > .flex-item-right > .text-package > h4
+{
+    margin-top: 14px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #4b4d53;
+}
+
+section > .flex-container > .top-package > .flex-item-left > .text-package > p,
+section > .flex-container > .top-package > .flex-item-center > .text-package > p
+{
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #6e7378;
+}
+
+section > .flex-container > .top-package > .flex-item-right > .text-package > p {
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #6e7378;
+}
+
+section > .flex-container > .top-package > .flex-item-center {
+    position: relative;
+    left: 4%;
+}
+
+section > .flex-container > .top-package > .flex-item-right {
+    position: relative;
+    left: 6%;
+    width: 36%;
+}
+
+section > .flex-container > .garis {
+    display: flex;
+}
+
+section > .flex-container > .garis > hr {
+    align-items: center;
+    margin-left: 47%;
+    margin-right: 45%;
+    margin-top: 5%;
+    border: 2px solid black;
+    width: 100%;
+}
+
+/* akhir section */
+
+/* section closing */
+
+section > .garis > hr {
+    border: 2px solid black;
+}
+
+section > .closing {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+section > .closing > p {
+    margin-top: 20px;
+}
+
+section > .closing > h1 {
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+section > .closing > button {
+    margin-top: 25px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #006792;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #006792;
+}
+
+section > .closing > button:hover {
+    box-shadow: 0 8px 28px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+footer {
+    background: #034f81;
+}
+
+footer > .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4);
+    align-items: center;
+    padding: 80px;
+}
+
+footer > .container > img {
+    width: 10%;
+    margin-bottom: 15px;
+}
+
+footer > .container > ul {
+    list-style: none;
+}
+
+footer > .container > .footer-link {
+    display: flex;
+    flex-direction: row;
+}
+
+footer > .container > ul > li > a {
+    margin-right: 10px; font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+footer > .container > .copyright {
+    color: white;
+    margin-top: 20px;
+}
+
+footer > .container > .copyright > a {
+    margin-right: 10px; font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+/* akhir closing */
+
+@media (max-width: 1000px) {
     header {
         flex-direction: column;
     }
@@ -303,12 +527,18 @@ article > .flex-container > .flex-item-right > .card > .header-form > p {
     }
 
     article > .flex-container {
-        margin-right: 100px;
-        margin-left: 31px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
     article > .flex-container > .flex-item-left {
         padding: 10px;
+    }
+
+    article > .flex-container > .flex-item-left > img {
+        width: 100%;
+        height: 50%;
+        margin-left: 0px;
     }
 
     article > .flex-container > .flex-item-left > p {
@@ -318,7 +548,7 @@ article > .flex-container > .flex-item-right > .card > .header-form > p {
         margin-left: 0px;
         color: #6e7378;
         text-align: center;
-        width: 125%;
+        width: 100%;
     }
 
     article > .flex-container > .flex-item-left > .nama-img {
@@ -332,17 +562,95 @@ article > .flex-container > .flex-item-right > .card > .header-form > p {
     }
 
     article > .flex-container > .flex-item-left > .garis > hr {
-        margin-left: 29%;
+        margin-left: 0%;
     }
 
     article > .flex-container > .flex-item-right .card {
-        background-color: #ebf1f1;
-        
+        background-color: #ebf1f1;    
         padding: 87px;
         margin-left: 0%;
         border-radius: 5px;
-        width: 71%;
     }
+
+    article > .flex-container > .flex-item-left > .benefits-travel {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    article > .flex-container > .flex-item-left > .benefits-travel > h3 {
+        text-align: center;
+    }
+
+    article > .flex-container > .flex-item-left > .benefits-travel > .step-benefits > .left > p {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    article > .flex-container > .flex-item-left > .benefits-travel > .step-benefits > .left > i {
+        padding: 25px 27px;
+    }
+
+    section > .header {
+        margin-top: 20%;
+    }
+
+    section > .flex-container > .top-package {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section > .flex-container > .top-package > .flex-item-center {
+        position: relative;
+        left: 0%;
+    }
+
+    section > .flex-container > .top-package > .flex-item-right {
+        position: relative;
+        left: 0%;
+        width: 100%;
+    }
+
+    section > .flex-container > .top-package > .flex-item-left, 
+    section > .flex-container > .top-package > .flex-item-center, 
+    section > .flex-container > .top-package > .flex-item-right {
+        flex-direction: column;
+    }
+
+    section > .flex-container > .top-package > .flex-item-left > .text-package > h4,
+    section > .flex-container > .top-package > .flex-item-center > .text-package > h4,
+    section > .flex-container > .top-package > .flex-item-right > .text-package > h4 {
+        margin-left: 0px;
+    }
+
+    section > .flex-container > .top-package > .flex-item-left > .text-package > p, 
+    section > .flex-container > .top-package > .flex-item-center > .text-package > p,
+    section > .flex-container > .top-package > .flex-item-right > .text-package > p {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    section > .flex-container > .garis > hr {
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 15%;
+    }
+
+    section > .closing > h1 {
+        font-size: 20px;
+        font-family: fantasy;
+    }
+
+    section > .closing > p {
+        font-size: 12px;
+    }
+
+    footer > .container > img {
+        width: 40%;
+        margin-bottom: 15px;
+    }
+   
 }
 
 /* slider mobile */
