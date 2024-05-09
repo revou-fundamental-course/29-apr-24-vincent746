@@ -62,6 +62,10 @@ img {
     vertical-align: middle;
 }
 
+article > .dot-center {
+    text-align:center;
+}
+
 article > .slideshow-container > .mySlides > img {
     width: 100%;
 }
@@ -394,7 +398,7 @@ section > .flex-container > .garis > hr {
     margin-left: 47%;
     margin-right: 45%;
     margin-top: 5%;
-    border: 2px solid black;
+    border: 2px solid #f3f3f3;
     width: 100%;
 }
 
@@ -403,7 +407,7 @@ section > .flex-container > .garis > hr {
 /* section closing */
 
 section > .garis > hr {
-    border: 2px solid black;
+    border: 2px solid #f3f3f3;
 }
 
 section > .closing {
@@ -554,6 +558,7 @@ footer > .container > .copyright > a {
     article > .flex-container > .flex-item-left > .nama-img {
         display: flex;
         justify-content: center;
+        margin-left: 0px;
     }
 
     article > .flex-container > .flex-item-left > .garis {
@@ -563,6 +568,10 @@ footer > .container > .copyright > a {
 
     article > .flex-container > .flex-item-left > .garis > hr {
         margin-left: 0%;
+    }
+
+    article > .flex-container > .flex-item-left > .nama-img > i {
+        margin: -5px 20px 0px 0px;
     }
 
     article > .flex-container > .flex-item-right .card {
@@ -649,6 +658,14 @@ footer > .container > .copyright > a {
     footer > .container > img {
         width: 40%;
         margin-bottom: 15px;
+    }
+
+    footer > .container > ul > li > a {
+        font-size: 12px;
+    }
+
+    footer > .container > .copyright {
+        font-size: 12px;
     }
    
 }
