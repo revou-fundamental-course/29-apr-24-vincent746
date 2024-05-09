@@ -506,7 +506,7 @@ footer > .container > .copyright > a {
     }
     
     .text > h1 {
-        font-size: 13px;
+        font-size: 10px;
         font-family: fantasy;
         text-shadow: 0px 0px white;
         font-weight: bold;
@@ -661,11 +661,11 @@ footer > .container > .copyright > a {
     }
 
     footer > .container > ul > li > a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     footer > .container > .copyright {
-        font-size: 12px;
+        font-size: 10px;
     }
    
 }
